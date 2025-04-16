@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="showGreeting()">
+
+  <header>
+    <h1>Welcome to My Profile</h1>
+  </header>
+
+  <main>
+    <section id="bio">
+      <img src="profile.jpg" alt="Profile Photo" id="profile-img" />
+      <h2>About Me</h2>
+      <p>Hello! I'm Mercy Nasimiyu Wechuli, a creative web enthusiast dedicated to building elegant, responsive websites that deliver seamless user experiences.I'm passionate about blending clean code with thoughtful design to create websites that are not only beautiful but also intuitive and fast.</p>
+      <button onclick="expandBio()">Read More</button>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>UI Design</li>
+        <li>Wireframing & Prototyping</li>
+        <li>Performance Optimization</li>
+        <li>Soft Skills (like creativity, attention to detail, communication)</li>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>Portfolio Website</p>
+      <p>Interactive Landing Page</p>
+    </section>
+
+    <section>
+      <h2>Subscribe to Newsletter</h2>
+      <form id="newsletter-form" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+        <button type="submit">Subscribe</button>
+        <p id="form-error"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p id="greeting"></p>
+    <p>&copy; 2025 My Profile</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
